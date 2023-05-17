@@ -2445,3 +2445,12 @@ input, select, textarea {
 					}
 
 	}  
+
+  .resize-img {
+    max-width: 60%;
+    object-fit: cover;
+    vertical-align: bottom;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+  }
