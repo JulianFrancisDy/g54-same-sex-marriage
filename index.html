@@ -53,9 +53,9 @@
 				<div class="container">
 					<header>
 						<h2>Here's an overview of our project.</h2>
-						<p>Odio turpis amet sed consequat eget posuere consequat.</p>
+						<p>We define the the problem that our study aims to answer.</p>
 					</header>
-					<div class="row aln-center">
+					<!-- <div class="row aln-center">
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon featured fa-comments"></span>
@@ -63,7 +63,7 @@
 								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
 							</section>
 						</div>
-					</div>
+					</div> -->
 					<div class="row aln-center" style="margin-top: 10px;">
 						<div>
 							<section class="box style1">
@@ -94,15 +94,15 @@
 							<section class="box style1">
 								<!-- <span class="icon featured fa-comments"></span> -->
 								<h3>Action Plan</h3>
-								<p>Analayze Twitter Accounts that posted mis/disinformation regarding the SOGIE Bill<br>
+								<p>Analyze Twitter Accounts that posted mis/disinformation regarding the SOGIE Bill<br>
 									and <strong>check their tweets and biography for religious keywords</strong>.</p>							
 							</section>
 						</div>
 					</div>
-					<footer>
+					<!-- <footer>
 						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 						<a href="#portfolio" class="button large scrolly">Let's take a look at our data</a>
-					</footer>
+					</footer> -->
 				</div>
 			</article>
 
@@ -110,9 +110,93 @@
 			<article id="data" class="wrapper style3">
 				<div class="container">
 					<header>
-						<h2>We mined the internet for fake news data.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+						<h2>Data Exploration</h2>
+            <p>We explore the data that we've collected to make sure they are aligned with the objectives of our study.</p>
 					</header>
+          <hr>
+          <h3>Data Collection</h3>
+          <p>We mined the internet for fake news data. We obtained tweets manually and by using a Python script. Since we want to explore the tweets which spread mis/disinformation about the SOGIE Bill, these are the keywords that we used to collect tweets: <b>"SOGIE Bill", "#NoToSOGIE", "#JunkSOGIEBill"</b> Note that these keywords are not case sensitive and may be separated i.e. "sogie" and "bill" were also used as keywords.</p>
+          <hr>
+          <div>
+            <h3>Data Structure Overview</h3>
+            <p>
+              The group was able to collect <b>128 samples</b> with <b>37 features</b> from <b>81 unique Twitter accounts.</b> Note that not all of these features might be relevant to the the study, and will be discussed later on. Moreover, some features have also been added to help analyze the data in the context of the study's research question.
+            </p>
+          </div>
+          <div>
+            <hr>
+            <h3>Data Cleaning and Formatting</h3>
+						<p align="justify">Out of the 37, the features with the highest percentage of null values are:</p>
+            <ul style="list-style-type:none" align="justify">
+              <li>Remarks:  99.22%</li>
+              <li>Screenshot: 97.66%</li>
+              <li>URL Redirects to: 91.41%</li>
+              <li>Views: 81.25%</li>
+              <li>Christian Keyword: 53.13%</li>
+            </ul>
+            <p align="justify">Since these features are not necessarily relevant to our hypothesis, we ignore these null values for now. We show some features and their type in the table below.</p> 
+            <div class="img-container">
+              <img src="images/132_1.png" alt="Dataset Features" class="resize-img">
+            </div>
+            <hr>
+          </div>
+          <div>
+            <h3>Data Visualization</h3>
+						<p align="justify">Our study aims to compare the <b>Christian and non-Christian</b> tweets that have vocally opposed and have spread mis/disinformation about the SOGIE Bill in the Philippines. For this purpose, we manually tagged tweets and profiles as Christian and non-Christian based on the following rules. Note that Christian keywords were taken from this <a href="https://en.wikipedia.org/wiki/Glossary_of_Christianity">Glossary of Christian terms</a>.</p>
+            <ul style="list-style-type:circle" align="justify">
+              <li>If the Twitter profile (bio, name, username) contains a Christian keyword.</li>
+              <li>If the tweet contains a Christian keyword.</li>
+              <li>If the profile has been previously tagged as "Christian."</li>
+            </ul>
+            <p align="justify">We show the count of the Christian and non-Christian tweets in the chart below.</p> 
+            <div class="img-container">
+              <img src="images/132_2.png" class="resize-img">
+            </div>
+            <p align="justify">We observe that the number of tweets tagged as Christian is more than the non-Christian tweets. Exploring the numerical features of the Christian and non-Christian tweets, we can also compare the tweets' engagement and interaction.</p>
+            <div class="img-container">
+              <img src="images/132_3.png" class="resize-img">
+            </div>
+            <p align="justify"><br/>In the table above, we can observe that Christian tweets have a higher mean value compared to the non-Christian tweets in terms of engagements. Which includes <b>Likes, Retweets, Replies, and Quote Tweets.</b> Even though non-Christian tweets have a higher mean value of Followers.</p>
+            <p align="justify">Moreover, we can also compare the account types of the Christian and non-Christian tweets. We show the distribution in the figure below.</p>
+            <div class="img-container">
+              <img src="images/132_4.png" class="resize-img">
+              <p><br/></p>
+              <div class="img-container">
+                <img src="images/132_9.png" class="resize-img">
+              </div>
+            </div>
+            <p align="justify"><br/> We observe that there are more <b>Anonymous</b> account types in the dataset, and that for each account type, there are more Christian tweets.</p>
+            <div>
+              We can also check which keywords appear more frequently in the profile bios and tweets in the dataset. We do this by using the Natural Language Toolkit (nltk) library. We also include Filipino stopwords taken from <a href="https://github.com/stopwords-iso/stopwords-tl">this library</a>. The most common keywords in the tweets and bios are shown below.
+              <div class="img-container">
+                <img src="images/132_5.png" class="resize-img">
+                <p></p>
+                <img src="images/132_6.png" class="resize-img">
+              </div>
+              <div>
+                <p align="justify"><br/>We use a word cloud to help us further visualize the frequency of these words in our dataset.</p>
+                <div class="img-container">
+                  <img src="images/132_7.png" class="resize-img">
+                </div>
+                <p style="font-size:1vw" >Word Cloud for Common Keywords in Tweets</p>
+                <div class="img-container">
+                  <img src="images/132_8.png" class="resize-img">
+                </div>
+                <p style="font-size:1vw" >Word Cloud for Common Keywords in Bios</p>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div>
+            <h3>Overall</h3>
+            <p align="justify">Through our data exploration, we were able to show that:</p>
+            <ul style="list-style-type:circle" align="justify">
+              <li>There are more Christian tweets which opposed the SOGIE Bill by spreading mis/disinformation.</li>
+              <li>These tweets got more interaction.</li>
+              <li>The most common words found in tweets are <b>right, bill, God, law, equality, and people.</b></li>
+            </ul>
+            <hr>
+          </div>
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">

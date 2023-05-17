@@ -74,6 +74,8 @@ input, select, textarea {
 
 /* Basic */
 
+
+
 	html {
 		box-sizing: border-box;
 	}
@@ -100,7 +102,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
+		color: #000000;
 		font-weight: 300;
 		font-size: 13pt;
 	}
@@ -1631,7 +1633,6 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 		}
-
 		.image.fit {
 			display: block;
 			width: 100%;
@@ -1657,6 +1658,7 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
+      
 
 /* Button */
 
@@ -2442,4 +2444,4 @@ input, select, textarea {
 						margin-top: 0;
 					}
 
-	}
+	}  
