@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
+		color: #000000;
 		font-weight: 300;
 		font-size: 13pt;
 	}
@@ -2443,3 +2443,13 @@ input, select, textarea {
 					}
 
 	}
+
+  .resize-img {
+    max-width: 60%;
+    object-fit: cover;
+    vertical-align: bottom;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+  }
+  
