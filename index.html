@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>PH Twitter Fake News Analysis</title>
+		<title>NOT SO OGIE: PH Twitter Fake News Analysis</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,10 +18,11 @@
 				<ul class="container">
 					<li><a href="#top">Top</a></li>
 					<li><a href="#overview">Overview</a></li>
-					<li><a href="#data">Data</a></li>
-					<li><a href="#methods">Methods</a></li>
+					<li><a href="#data">Data Exploration</a></li>
+					<li><a href="#modelling">Data Modelling</a></li>
 					<li><a href="#results">Results</a></li>
-					<li><a href="#team">Team</a></li>
+          <li><a href="#poster">Poster</a></li>
+					<li><a href="#team">About Us</a></li>
 				</ul>
 			</nav>
 
@@ -30,11 +31,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/notsoogielabel.png" alt="" /></span>
+							<span class="image fit"><img src="images/logo.png" alt="" /></span>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
-								<h1>Hi. We are <strong>NOT SO OGIE</strong>.</h1>
+								<h1>Hi. We are <strong>keribels!</strong>.</h1>
 								<h3>CS 132 Group 54</h3>
 							</header>
 							<p>
@@ -211,59 +212,10 @@
 						<p>Take an in-depth look at our data exploration using our python notebook</p>
 					</header>
 					<script src="https://gist.github.com/JulianFrancisDy/2c937a330b00ce3254b8b8c1da55bd3d.js"></script>
-
-					<!-- <div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Topic</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Keywords</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#">Tools</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<h3><a href="#">Tempus dolore</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-								<h3><a href="#">Feugiat aliquam</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-								<h3><a href="#">Sed amet ornare</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-					</footer>
-				</div> -->
 			</article>
 
 			<!-- Methods -->
-			<article id="methods" class="wrapper style3">
+			<article id="modelling" class="wrapper style3">
 				<div class="container">
 					<header>
 						<h2>Data Modelling and Statistical Analysis.</h2>
@@ -281,12 +233,31 @@
 
 						<p> The researchers have set the Topic Model to group the biographies into 5 topics. </p>
 						<p> By grouping these biogrpahies, we can gain insight on the self-perceptions and associations of the Twitter users, as account biogprahies can serve as their personal descriptions.</p>
+            <div style="margin: 0 auto; text-align: center; width: 600px;">
+              <ul align = "justify" style="color:black;">
+                <li>
+                  <span style = "color:#646EFA; font-weight: bold;"> Topic 1</span>
+                  contains the keywords <i>conservative, filipino, traditional, blessed,</i> which would suggest words that would describe their self <strong>Cultural Identity</strong>
+                </li>
+                <li>
+                  <span style = "color:#EB3F1B; font-weight: bold;"> Topic 2</span>
+                  contains the keywords <i>life, lord, lead, worshipper,</i> which may suggest words that would describe their <strong>roles</strong>.
+                </li>
+                <li>
+                  <span style = "color:#01CC96; font-weight: bold;"> Topic 3</span>
+                  contains the keywords <i>love, krist, bible, jesus, people, ps374, john,</i> which strongly suggest these pertain to the users' <strong>faith</strong>, with keywords referring to the Christian Religion along with bible verses and chapters.
+                </li>
+                <li>
+                  <span style = "color:#AB63FA; font-weight: bold;"> Topic 4</span>
+                  contains the keywords <i>love, katotohanan, bayan, diyos,</i> which could refer to their <strong>passion</strong> to love, truth, country, Jesus, and the like.
+                </li>
+                <li>
+                  <span style = "color:#FFA15A; font-weight: bold;"> Topic 5</span>
+                  contains the keywords <i>antiwokes, antifakenews, antisupidity, prouddds,feministisantiwoman,</i> which can be grouped as their <strong>advocacies</strong> which alarmingly suggest hate speech.
+                </li>
+              </ul>
+            </div>
 						<div style="text-align: left;">
-							<p> <b>Topic 1</b> contains the keywords <i>conservative, filipino, traditional, blessed,</i> which would suggest words that would describe their self <strong>Cultural Identity</strong>.</p>
-							<p> <b>Topic 2</b> contains the keywords <i>life, lord, lead, worshipper,</i> which may suggest words that would describe their <strong>roles</strong>.</p>
-							<p> <b>Topic 3</b> contains the keywords <i>love, krist, bible, jesus, people, ps374, john,</i> which strongly suggest these pertain to the users' <strong>faith</strong>, with keywords referring to the Christian Religion along with bible verses and chapters.</p>
-							<p> <b>Topic 4</b> contains the keywords <i>love, katotohanan, bayan, diyos,</i> which could refer to their <strong>passion</strong> to love, truth, country, Jesus, and the like.</p>
-							<p> <b>Topic 5</b> contains the keywords <i>antiwokes, antifakenews, antisupidity, prouddds,feministisantiwoman,</i> which can be grouped as their <strong>advocacies</strong> which alarmingly suggest hate speech.</p>
 							<p> It is important to note that despite being grouped into different topics, <strong>4 out of 5 topics</strong> contain a keyword pertaining to Christianity suggesting its prominence in how these Twitter Users describe themselves.</p>
 						</div>
 					</div>
@@ -299,12 +270,24 @@
 						<p> Reiterating the null and alternate hypothesis:</p>
 						<p> <b>Null hypothesis:</b> There is NO association between the topics and religious affiliations.</p>
 						<p> <b>Alternate hypothesis:</b> There is STRONG association between the topics and religious affiliations.</p>
+            <div class="img-container">
+              <img src="images/dist.png" class="resize-img">
+            </div>
 						<p> The result from the test is the p-value which will be the basis for accepting or rejecting the hypothesis. A p-value of less than the significance level of 0.05 would provide the evidence to reject the null hypothesis.</p>
 
-						<h3> Statistical Analaysis Result </h3>
+						<h3> Statistical Analysis Result </h3>
 						<p> Prior to performing the Chi-Square test, <b>Shapiro-Wilk and Anderson-Darling</b> tests were performed to verify normal distribution among the topics. The results from both tests indicated that the topics were found to be normally distributed. </p>
 						<p> The results from the Chi-Square test returned a <b>Test Statistic of 248</b>, <b>P-value of 1.33e-43</b>, <b>Degrees of Freedom of 16</b>.</p>
 						<p> The extremely small P-value would provide the evidence to reject the null hypothesis. This is further supported by the large test statistic which also indicates deviation from the null hypothesis. </p>
+
+            <p> Given this, <b>Topic 4</b> is the cluster with a higher number of tweets compared to the other topics. </p>
+
+            <div style="margin: 0 auto; text-align: center; width: 700px;">
+            <p style="font-weight: bold;">
+              Thus, Twitter accounts who post mis/disinformation about the SOGIE Bill commonly have the theme of passion in their profile bios.
+            </p>
+            </div>
+
 					</div>
 				</div>
 			</article>
@@ -343,64 +326,86 @@
 				</div>
 			</article>
 
-		<!-- Team -->
-			<article id="team" class="wrapper style4">
-				<div class="container medium">
+      <!-- Poster -->
+      <article id="poster" class="wrapper style3">
+				<div class="container">
 					<header>
-						<h2>We'd like to hear from you.</h2>
-						<p>You can add more information about the team members here.</p>
+						<h2>Poster</h2>
+						<p>Check out our poster here.</p>
 					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
+            <img src="images/poster.png" alt style ="height: 50rem;">
+
+            
+        </div>
+      </article>
+
+      <!-- About Us -->
+      <article id = "team" class="wrapper style3">
+        <div class = "container">
+          <header>
+            <h2> Meet the Team</h2>
+            <p>Introducing the members of the team behind this data analysis project.</p>
+          </header>
+          <div class="row aln-center">
+          <section class="box style5" style = "border-radius: 20px">
+            <div class="row aln-center">
+            <div class="col-4 col-6-medium col-12-small" style="justify-content: center;">
+              <img src="images/cams.jpg" alt style = "width:60%; height: 75%; border-radius: 50%">
+              <h3>Camille Rule</h3>
+            </div>
+            <div class ="col-8 col-6-medium col-12-small" style ="display: flex; align-items: center; justify-content: center;">
+              <p>
+                Hello! My name is Camille P. Rule. You can call me Cams. I'm a CS 132 student in WFU - Spring. I'm a 4th year BS Computer Science student who loves cats and tuna pasta! I also love running and taking film photos. I'm a part of thhe System Modelling and Simulation Laboratory, working on a research paper about COVID-19 outcomes and their association with different region-specific factors. Honestly, data science is one of the branches of Computer Science that I love because I'm interested in how data is visualized and the insights that we can draw from them.
+              </p>
+            </div>
+          </div>
+          </section>
+          <section class="box style5" style = "border-radius: 20px">
+            <div class="row aln-center">
+            <div class="col-4 col-6-medium col-12-small" style="justify-content: center;">
+              <img src="images/julian.jpg" alt style = "width:60%; height: 75%; border-radius: 50%">
+              <h3>Julian Dycaico</h3>
+            </div>
+            <div class ="col-8 col-6-medium col-12-small" style ="display: flex; align-items: center; justify-content: center;">
+              <p>
+                Hello! My name is Julian Dycaico from WFW - Summer. 
+              </p>
+            </div>
+          </div>
+          </section>
+          <section class="box style5" style = "border-radius: 20px">
+            <div class="row aln-center">
+            <div class="col-4 col-6-medium col-12-small" style="justify-content: center;">
+              <img src="images/marcus.jpg" alt style = "width:60%; height: 75%; border-radius: 50%">
+              <h3>Marcus Pilapil</h3>
+            </div>
+            <div class ="col-8 col-6-medium col-12-small" style ="display: flex; align-items: center; justify-content: center;">
+              <p>
+                Hello! My name is Marcus Pilapil from WFW - Summer. 
+              </p>
+            </div>
+          </div>
+          </section>
+          <section class="box style5" style = "border-radius: 20px">
+            <div class="row aln-center">
+            <div class="col-4 col-6-medium col-12-small" style="justify-content: center;">
+              <img src="images/logo.png" alt style = "width:60%; height: 75%; border-radius: 50%">
+              <h3>Contact Us</h3>
+            </div>
+            <div class ="col-8 col-6-medium col-12-small" style ="display: flex; align-items: center; justify-content: center;">
+              <p>
+                Got any questions or concerns? Reach us through this <a href="https://forms.gle/DdZiwNKhMgSg7zym7">form.</a> You may also access our <a href="https://github.com/JulianFrancisDy/g54-same-sex-marriage">Github repository</a> for our source codes.
+              </p>
+              
+            </div>
+          </div>
+          </section>
+        </div>
+        </div>
+      </article>
+
+			<article class="wrapper style4">
+				<div class="container medium">
 					<footer>
 						<ul id="copyright">
 							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -419,20 +424,3 @@
 
 	</body>
 </html>
-
-<!-- <div class="row">
-	<div class="col-6 col-6-medium col-12-small">
-		<article class="box style2">
-			<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-			<h3><a href="#">Data Preprocessing</a></h3>
-			<p>Ornare nulla proin odio consequat.</p>
-		</article>
-	</div>
-	<div class="col-6 col-6-medium col-12-small">
-		<article class="box style2">
-			<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-			<h3><a href="#">Machine Learning</a></h3>
-			<p>Ornare nulla proin odio consequat.</p>
-		</article>
-	</div>
-</div> -->
